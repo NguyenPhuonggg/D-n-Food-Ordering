@@ -1,0 +1,193 @@
+/* Định dạng chung */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: rgb(214, 225, 108);/* Màu của link */
+    text-decoration: none; /* Loại bỏ gạch chân */
+}
+
+a:hover {
+    color: red; /* Màu của link khi di chuột qua */
+}
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://www.semiosissoftware.com/wp-content/uploads/2020/01/Food-Ordering-System.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container chính */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Form container */
+.form-container {
+    background: rgba(255, 255, 255, 0.1); /* Lớp nền mờ */
+    padding: 40px;
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Tiêu đề trang */
+h1 {
+    font-size: 2em;
+    color:rgb(214, 225, 108);
+    margin-bottom: 200px;
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.1); /* Lớp nền mờ */
+    padding: 20px;
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    text-align: center;
+}
+/* Tiêu đề form */
+h2 {
+    color: rgb(214, 225, 108);
+    margin-bottom: 20px;
+    font-size: 5em;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+    
+}
+
+h4{
+    color: rgb(214, 225, 108);
+    text-align: center;
+    
+}
+
+/* Form box */
+.form-box {
+    background: rgba(255, 255, 255, 0.1); /* Lớp nền mờ */
+    padding: 20px;
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    text-align: center;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.3);
+    color: rgb(10, 2, 2);
+    font-size: 1em;
+}
+
+input::placeholder {
+    color: black;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #28a745;
+    color:black;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/*menu.html*/
+.item_title{
+    font-size:14px;
+    color:rgb(214, 225, 108);
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+.item_title:hover{
+    color:red;
+}
+.item_image{
+    display:block;
+    overflow:hidden;
+}
+.item_image img:hover{
+    transform: scale(1.09);
+    transition: transform 0.3s linear;
+}
+.item_price{
+    color: rgb(214, 225, 108);
+   /* margin-top: 6px;
+    display: flex;
+    justify-content: space-between;*/
+    text-align: center;
+}
+.list_food{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap:20px;
+
+}
+
+/* Logout trong menu*/
+.logout-button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+    max-width: 200px;
+    transition: background-color 0.3s ease;
+    align-self: center; /* Căn giữa nút logout */
+    margin: 0 auto;
+    
+}
+
+/*hiệu ứng nút order
+
+.item:hover .function_order{
+    transform:translateY(0);
+}
+.function_order{
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #218838;
+    transform: translateY(100%);
+    transition: 0.4s;
+}*/
+

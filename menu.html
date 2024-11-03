@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <main class = "main">
+        <h2>Menu</h2>
+        <div class="list_food">
+            <section class="item">
+                <a href="" class="item_image">
+                    <img src="https://www.bing.com/th?id=OIP.hiTvj0lWXd4MLg-1SUjOqgHaE7&w=149&h=100&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2" alt=""/>
+                </a>
+                <h3 class="item_title">Sushi</h3>
+                <div class="item_price">
+                    <span>100.000 đ</span>
+                    <button class="function_order" onclick="handleOrder()">Order</button>
+                </div>
+            </section>
+
+            <section class="item">
+                <a href="" class="item_image">
+                    <img src="https://www.bing.com/th?id=OIP.Qe3rjmVKTVwcQ3DhLwwNYQHaEo&w=150&h=100&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2" alt=""/>
+                </a>
+                <h3 class="item_title">Pizza</h3>
+                <div class="item_price">
+                    <span>150.000 đ</span>
+                    <button class="function_order" onclick="handleOrder()">Order</button>
+                </div>
+            </section>
+            
+            <section class="item">
+                <a href="" class="item_image">
+                    <img src="https://www.bing.com/th?id=OIP.RN6-UTVgOPMOcDEUwkI2_gHaEo&w=145&h=100&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2" alt=""/>
+                </a>
+                <h3 class="item_title">Hamburger</h3>
+                <div class="item_price">
+                    <span>50.000 đ</span>
+                    <button class="function_order" onclick="handleOrder()">Order</button>
+                </div>
+            </section>
+
+            <section class="item">
+                <a href="" class="item_image">
+                    <img src="https://www.bing.com/th?id=OIP.2m9lbs0oK1Hxq6G4H9jtsgHaFa&w=135&h=100&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2" alt=""/>
+                </a>
+                <h3 class="item_title">KFC</h3>
+                <div class="item_price">
+                    <span>200.000 đ</span>
+                    <button class="function_order" onclick="handleOrder()">Order</button>
+                </div>
+            </section>
+
+            <section class="item">
+                <a href="" class="item_image">
+                    <img src="https://www.bing.com/th?id=OIP.G7__zDZWMbKJUiac6sEfEAHaFG&w=144&h=100&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2" alt=""/>
+                </a>
+                <h3 class="item_title">Phở Bò</h3>
+                <div class="item_price">
+                    <span>25.000 đ</span>
+                    <button class="function_order" onclick="handleOrder()">Order</button>
+                </div>
+                
+            </section>
+        </div>
+        <div class="logout-button">
+            <button onclick="handleLogout()">Logout</button>
+        </div>
+    </main>
+    <div class="order-message" id="orderMessage">
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
